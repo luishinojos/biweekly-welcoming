@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Avatar, Card, CardContent, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
 
 const darkTheme = createTheme({
   palette: {
@@ -23,6 +23,33 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const people = [
+  {
+    name: "Jeffry Hernández",
+    nationality: "CO",
+    photo: "/src/resources/jeffery.jpeg"
+  },
+  {
+    name: "Damian Zermeño",
+    nationality: "MX",
+    photo: "/src/resources/damian.jpeg"
+  },
+  {
+    name: "Alberto Piñon Formoso",
+    nationality: "MX",
+    photo: "/src/resources/alberto.jpeg"
+  },
+  {
+    name: "Jorge Madrigal",
+    nationality: "CO",
+    photo: "/src/resources/jorge.jpeg"
+  },
+  {
+    name: "Ricardo Núñez",
+    nationality: "CO",
+    photo: "/src/resources/ricardo.jpeg"
+  }
+]
 
 export default function RowAndColumnSpacing() {
 
@@ -32,8 +59,6 @@ export default function RowAndColumnSpacing() {
   const [cardFour, setCardFour] = useState(false);
   const [cardFive, setCardFive] = useState(false);
   const [cardSix, setCardSix] = useState(false);
-  const [cardSeven, setCardSeven] = useState(false);
-  const [cardEight, setCardEight] = useState(false);
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -55,88 +80,116 @@ export default function RowAndColumnSpacing() {
             </Card>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardOne(!cardOne)} className={cardOne ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardTwo(!cardTwo)} className={cardTwo ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardThree(!cardThree)} className={cardThree ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardFour(!cardFour)} className={cardFour ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={4}><div onClick={() => setCardSix(!cardSix)} className={cardSix ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="Paris" />
+              </div>
+              <div className="flip-box-back">
+                <Item className='question'>
+                  <p>"What's your favorite holiday?</p>
+                </Item>
               </div>
             </div>
+          </div>
           </Grid>
           <Grid item xs={2}>
             <img className='spin' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
           </Grid>
-          <Grid item xs={8} >
-            
+          <Grid item xs={8}>
+            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+              {people.map(member => (
+                <Grid item xs={6}>
+                  <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                    <ListItem alignItems="flex-start">
+                      <ListItemAvatar>
+                        <Avatar alt={member.name} src={member.photo} />
+                      </ListItemAvatar>
+                      <ListItemText
+                        primary={member.name}
+                        secondary={
+                          <React.Fragment>
+                            <Typography
+                              sx={{ display: 'inline' }}
+                              component="span"
+                              variant="body2"
+                              color="text.primary"
+                            >
+                              {member.name}
+                            </Typography>
+                            &nbsp;- {member.nationality}
+                          </React.Fragment>
+                        }
+                      />
+                    </ListItem>
+                  </List>
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
           <Grid item xs={2}>
             <img className='spin-reverse' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />

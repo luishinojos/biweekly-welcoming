@@ -1,8 +1,9 @@
 body {
   background-color: #b5b2b2;
-  margin: 3%; }
+  margin: 3%;
+  overflow: hidden; }
 
-div.MuiPaper-root {
+div.MuiPaper-root.question {
   height: 190px;
   font-size: 23pt; }
 
@@ -88,3 +89,6 @@ div.newcomers {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg); }
+
+.MuiListItemText-root span.MuiTypography-root {
+  color: white; }
