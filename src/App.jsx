@@ -166,9 +166,9 @@ export default function RowAndColumnSpacing() {
             <img className='spin' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
           </Grid>
           <Grid item xs={8}>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid container rowSpacing={1} direction="row" justifyContent="center" alignItems="center">
               {people.map(member => (
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start">
                       <ListItemAvatar>
