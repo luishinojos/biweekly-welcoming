@@ -26,28 +26,33 @@ const Item = styled(Paper)(({ theme }) => ({
 const people = [
   {
     name: "Jeffry Hernández",
-    nationality: "CO",
-    photo: "src/resources/jeffery.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/jeffery.jpeg",
+    position: "SRE III"
   },
   {
     name: "Damian Zermeño",
-    nationality: "MX",
-    photo: "src/resources/damian.jpeg"
+    nationality: "Guadalajara",
+    photo: "/assets/img/damian.jpeg",
+    position: "SRE III"
   },
   {
     name: "Alberto Piñon Formoso",
-    nationality: "MX",
-    photo: "src/resources/alberto.jpeg"
+    nationality: "Mexico",
+    photo: "/assets/img/alberto.jpeg",
+    position: "SRE II"
   },
   {
     name: "Jorge Madrigal",
-    nationality: "CO",
-    photo: "src/resources/jorge.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/jorge.jpeg",
+    position: "SRE III"
   },
   {
     name: "Ricardo Núñez",
-    nationality: "CO",
-    photo: "src/resources/ricardo.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/ricardo.jpeg",
+    position: "SRE II"
   }
 ]
 
@@ -179,7 +184,7 @@ export default function RowAndColumnSpacing() {
                               variant="body2"
                               color="text.primary"
                             >
-                              {member.name}
+                              {member.position}
                             </Typography>
                             &nbsp;- {member.nationality}
                           </React.Fragment>
