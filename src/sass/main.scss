@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(181, 178, 178);
+  background-color: rgb(165, 164, 164);
   margin: 2%;
   overflow: hidden;
 }
@@ -121,12 +121,12 @@ div.newcomers {
   transform: rotateY(180deg);
 }
 
-.MuiListItemText-root {
-  span.MuiTypography-root {
-    color: white;
-  }
-
+.MuiListItemText-root>span.MuiTypography-root {
+  color: rgb(230, 223, 223);
+  text-decoration: underline;
 }
+
+
 
 ul.MuiList-root:hover {
   box-shadow: 0 14px 18px 0 rgba(255, 255, 255, 0.7), 0 6px 20px 0 rgba(255, 255, 255, 0.69);

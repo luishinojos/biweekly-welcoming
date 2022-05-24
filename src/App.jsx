@@ -79,7 +79,7 @@ export default function RowAndColumnSpacing() {
                   Answer the two questions below and then select one mystery question! Anyone is welcome to give their reponses in the chat. 😬
                 </Typography>
                 <Typography >
-                  🏠 Where are you from? | 🌟 Favorite hobbie?
+                  🏠 Where are you from? | 🌟 What do you like doing in your free time?
                 </Typography>
               </CardContent>
             </Card>
@@ -87,11 +87,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardOne(!cardOne)} className={cardOne ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="aws" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>The best destination that you've went on vacations? 🏖</p>
                 </Item>
               </div>
             </div>
@@ -100,11 +100,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardTwo(!cardTwo)} className={cardTwo ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="Paris" />
+                <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="terraform" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>What's your favorite sport to watch or practice? ⛹️</p>
                 </Item>
               </div>
             </div>
@@ -113,11 +113,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardThree(!cardThree)} className={cardThree ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="Paris" />
+                <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="jenkins" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>A movie or show you want to recommend? 🍿</p>
                 </Item>
               </div>
             </div>
@@ -126,11 +126,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardFour(!cardFour)} className={cardFour ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="Paris" />
+                <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="k8s" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>What superpower would you like to have? 🦸</p>
                 </Item>
               </div>
             </div>
@@ -139,11 +139,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="Paris" />
+                <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="azure" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>Can you tell us the last thing that you have ordered online? 🛍</p>
                 </Item>
               </div>
             </div>
@@ -152,11 +152,11 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardSix(!cardSix)} className={cardSix ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="Paris" />
+                <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="bash" />
               </div>
               <div className="flip-box-back">
                 <Item className='question'>
-                  <p>"What's your favorite holiday?</p>
+                  <p>What's the best meal that you can cook? 🧑‍🍳</p>
                 </Item>
               </div>
             </div>
