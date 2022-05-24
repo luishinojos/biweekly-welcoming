@@ -1,0 +1,8 @@
+? "Pineapple on pizza?" : "🦷"}</p>
+? "What's your favorite musician/band?" : "🍎"}</p>
+? "Do you have a favorite sports team?" : "🏓"}</p>
+? "How do you drink your coffee?" : "💿"}</p>
+? "What's the last movie/anime/series that you saw?" : "🦁"}</p>
+? "What's the best meal that you can cook?" : "🔥"}</p>
+? "You have to sing karaoke, what song do you pick?" : "🎃"}</p>
+? "What's your favorite holiday?" : "🍕"}</p>

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Jeffry Hernández",
+        "nationality": "CO",
+        "photo": "resources/jeffery.jpeg"
+    },
+    {
+        "name": "Damian Zermeño",
+        "nationality": "MX",
+        "photo": "resources/damian.jpeg"
+    },
+    {
+        "name": "Alberto Piñon Formoso",
+        "nationality": "MX",
+        "photo": "resources/alberto.jpeg"
+    },
+    {
+        "name": "Jorge Madrigal",
+        "nationality": "CO",
+        "photo": "resources/jorge.jpeg"
+    },
+    {
+        "name": "Ricardo Núñez",
+        "nationality": "CO",
+        "photo": "resources/ricardo.jpeg"
+    }
+]
