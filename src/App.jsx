@@ -27,27 +27,27 @@ const people = [
   {
     name: "Jeffry Hernández",
     nationality: "CO",
-    photo: "/src/resources/jeffery.jpeg"
+    photo: "src/resources/jeffery.jpeg"
   },
   {
     name: "Damian Zermeño",
     nationality: "MX",
-    photo: "/src/resources/damian.jpeg"
+    photo: "src/resources/damian.jpeg"
   },
   {
     name: "Alberto Piñon Formoso",
     nationality: "MX",
-    photo: "/src/resources/alberto.jpeg"
+    photo: "src/resources/alberto.jpeg"
   },
   {
     name: "Jorge Madrigal",
     nationality: "CO",
-    photo: "/src/resources/jorge.jpeg"
+    photo: "src/resources/jorge.jpeg"
   },
   {
     name: "Ricardo Núñez",
     nationality: "CO",
-    photo: "/src/resources/ricardo.jpeg"
+    photo: "src/resources/ricardo.jpeg"
   }
 ]
 
