@@ -54,55 +54,89 @@ export default function RowAndColumnSpacing() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardOne(!cardOne)}>
-              <p>{cardOne ? "Pineapple on pizza?" : "🦷"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardTwo(!cardTwo)}>
-              <p>{cardTwo ? "What's your favorite musician/band?" : "🍎"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardThree(!cardThree)}>
-              <p>{cardThree ? "Do you have a favorite sports team?" : "🏓"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardFour(!cardFour)}>
-              <p>{cardFour ? "How do you drink your coffee?" : "💿"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardFive(!cardFive)}>
-              <p>{cardFive ? "What's the last movie/anime/series that you saw?" : "🦁"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardSix(!cardSix)}>
-              <p>{cardSix ? "What's the best meal that you can cook?" : "🔥"}</p>
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardSeven(!cardSeven)}>
-              <p>{cardSeven ? "You have to sing karaoke, what song do you pick?" : "🎃"}</p>
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item onClick={() => setCardEight(!cardEight)}>
-              <p>{cardEight ? "What's your favorite holiday?" : "🍕"}</p>
-            </Item>
+          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
           </Grid>
           <Grid item xs={2}>
             <img className='spin' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
           </Grid>
           <Grid item xs={8} >
-            <div className='newcomers'>
-              <p>Rafa Miranda | Fernando Gonzalez</p>
-              <p>Oscar Castillo | Antonio Florez</p>
-              <p>Saul Rubio | Edgar Talledos</p>
-            </div>
+            
           </Grid>
           <Grid item xs={2}>
             <img className='spin-reverse' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
