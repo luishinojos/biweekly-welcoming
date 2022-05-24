@@ -26,28 +26,33 @@ const Item = styled(Paper)(({ theme }) => ({
 const people = [
   {
     name: "Jeffry Hernández",
-    nationality: "CO",
-    photo: "src/resources/jeffery.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/jeffery.jpeg",
+    position: "SRE III"
   },
   {
     name: "Damian Zermeño",
-    nationality: "MX",
-    photo: "src/resources/damian.jpeg"
+    nationality: "Guadalajara",
+    photo: "/assets/img/damian.jpeg",
+    position: "SRE III"
   },
   {
     name: "Alberto Piñon Formoso",
-    nationality: "MX",
-    photo: "src/resources/alberto.jpeg"
+    nationality: "Mexico",
+    photo: "/assets/img/alberto.jpeg",
+    position: "SRE II"
   },
   {
     name: "Jorge Madrigal",
-    nationality: "CO",
-    photo: "src/resources/jorge.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/jorge.jpeg",
+    position: "SRE III"
   },
   {
     name: "Ricardo Núñez",
-    nationality: "CO",
-    photo: "src/resources/ricardo.jpeg"
+    nationality: "Colombia",
+    photo: "/assets/img/ricardo.jpeg",
+    position: "SRE II"
   }
 ]
 
@@ -161,9 +166,9 @@ export default function RowAndColumnSpacing() {
             <img className='spin' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
           </Grid>
           <Grid item xs={8}>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid container rowSpacing={1} direction="row" justifyContent="center" alignItems="center">
               {people.map(member => (
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start">
                       <ListItemAvatar>
@@ -179,7 +184,7 @@ export default function RowAndColumnSpacing() {
                               variant="body2"
                               color="text.primary"
                             >
-                              {member.name}
+                              {member.position}
                             </Typography>
                             &nbsp;- {member.nationality}
                           </React.Fragment>
