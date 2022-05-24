@@ -54,7 +54,7 @@ export default function RowAndColumnSpacing() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+          <Grid item xs={4}><div onClick={() => setCardOne(!cardOne)} className={cardOne ? "flip-box flip-box-clicked" : "flip-box"}>
               <div className="flip-box-inner">
                 <div className="flip-box-front">
                   <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
@@ -67,10 +67,36 @@ export default function RowAndColumnSpacing() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+          <Grid item xs={4}><div onClick={() => setCardTwo(!cardTwo)} className={cardTwo ? "flip-box flip-box-clicked" : "flip-box"}>
               <div className="flip-box-inner">
                 <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                  <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={4}><div onClick={() => setCardThree(!cardThree)} className={cardThree ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="Paris" />
+                </div>
+                <div className="flip-box-back">
+                  <Item >
+                    <p>"What's your favorite holiday?</p>
+                  </Item>
+                </div>
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={4}><div onClick={() => setCardFour(!cardFour)} className={cardFour ? "flip-box flip-box-clicked" : "flip-box"}>
+              <div className="flip-box-inner">
+                <div className="flip-box-front">
+                  <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="Paris" />
                 </div>
                 <div className="flip-box-back">
                   <Item >
@@ -83,7 +109,7 @@ export default function RowAndColumnSpacing() {
           <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
               <div className="flip-box-inner">
                 <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                  <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="Paris" />
                 </div>
                 <div className="flip-box-back">
                   <Item >
@@ -93,36 +119,10 @@ export default function RowAndColumnSpacing() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+          <Grid item xs={4}><div onClick={() => setCardSix(!cardSix)} className={cardSix ? "flip-box flip-box-clicked" : "flip-box"}>
               <div className="flip-box-inner">
                 <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
-                </div>
-                <div className="flip-box-back">
-                  <Item >
-                    <p>"What's your favorite holiday?</p>
-                  </Item>
-                </div>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
-              <div className="flip-box-inner">
-                <div className="flip-box-front">
-                  <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="Paris" />
+                  <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="Paris" />
                 </div>
                 <div className="flip-box-back">
                   <Item >

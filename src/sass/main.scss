@@ -4,16 +4,12 @@ body {
 }
 
 div.MuiPaper-root {
-  cursor: pointer;
+  height: 190px;
   font-size: 23pt;
 }
 
 div.MuiPaper-root:hover {
   background-color: #282f36;
-}
-
-img {
-  width: 69%;
 }
 
 img.spin {
@@ -72,9 +68,9 @@ div.newcomers {
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
+  cursor: pointer;
   width: 100%;
   height: 200px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
 
@@ -82,7 +78,6 @@ div.newcomers {
     object-fit: cover;
     width: inherit;
     height: inherit;
-
   }
 }
 
