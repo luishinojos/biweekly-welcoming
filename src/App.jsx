@@ -62,7 +62,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>The best destination that you've went on vacations? 🏖</p>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>What's your favorite sport to watch or practice? ⛹️</p>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>A movie or show you want to recommend? 🍿</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>What superpower would you like to have? 🦸</p>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>Can you tell us the last thing that you have ordered online? 🛍</p>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>What's the best meal that you can cook? 🧑‍🍳</p>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>What do you like buying from the grocery shop? 🍪</p>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className='flip-box-back'>
-                <p>ajgdfjhag dhfgak jdhg fkjahdg fkjag</p>
+                <p>If you won a lottery, what would you do with all the money? 🤑</p>
               </div>
             </div>
           </div>

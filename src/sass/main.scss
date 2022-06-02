@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 900px;
   margin: 5px auto;
   display: grid;
   grid-template-rows: 40px 230px 230px 230px 125px;
@@ -138,4 +138,7 @@ body {
 /* Style the back side */
 .flip-box-back {
   transform: rotateX(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
