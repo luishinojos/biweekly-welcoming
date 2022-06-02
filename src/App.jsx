@@ -1,13 +1,8 @@
 
-import './App.css';
+import './index.css';
 import React, { useState } from 'react';
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Avatar, Card, CardContent, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
 
 const darkTheme = createTheme({
   palette: {
@@ -15,45 +10,22 @@ const darkTheme = createTheme({
   },
 });
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
-
 const people = [
   {
-    name: "Jeffry Hernández",
-    nationality: "Colombia",
-    photo: "assets/img/jeffery.jpeg",
-    position: "SRE III"
+    name: "???",
+    lastname: "MAN",
+    photo: "src/favicon.svg"
   },
   {
-    name: "Damian Zermeño",
-    nationality: "Guadalajara",
-    photo: "assets/img/damian.jpeg",
-    position: "SRE III"
+    name: "Carlos",
+    lastname: "Pérez",
+    photo: "assets/img/carlos-perez.jpeg",
   },
   {
-    name: "Alberto Piñon Formoso",
-    nationality: "Mexico",
-    photo: "assets/img/alberto.jpeg",
-    position: "SRE II"
+    name: "Raúl",
+    lastname: "Murcia",
+    photo: "assets/img/raul-murcia.jpeg",
   },
-  {
-    name: "Jorge Madrigal",
-    nationality: "Colombia",
-    photo: "assets/img/jorge.jpeg",
-    position: "SRE III"
-  },
-  {
-    name: "Ricardo Núñez",
-    nationality: "Colombia",
-    photo: "assets/img/ricardo.jpeg",
-    position: "SRE II"
-  }
 ]
 
 export default function RowAndColumnSpacing() {
@@ -64,143 +36,168 @@ export default function RowAndColumnSpacing() {
   const [cardFour, setCardFour] = useState(false);
   const [cardFive, setCardFive] = useState(false);
   const [cardSix, setCardSix] = useState(false);
+  const [cardSeven, setCardSeven] = useState(false);
+  const [cardEight, setCardEight] = useState(false);
+  const [cardMember, setCardMember] = useState(0);
+
+  const updateMemberCard = (cardMember) => {
+    let temp = cardMember;
+    if (cardMember < (people.length - 1)) {
+      setCardMember(temp + 1);
+    } else {
+      setCardMember(0);
+    }
+  }
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Box sx={{ width: '100%' }}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={12}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Welcome to the SRE &amp; Cloud Ops team!
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  Answer the two questions below and then select one mystery question! Anyone is welcome to give their reponses in the chat. 😬
-                </Typography>
-                <Typography >
-                  🏠 Where are you from? | 🌟 What do you like doing in your free time?
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardOne(!cardOne)} className={cardOne ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://comunidadblogger.net/wp-content/uploads/2021/06/aws-logo.jpg" alt="aws" />
+      <div className="container">
+        <div className="header"><p>==== SRE ICEBREAK START ====</p></div>
+        <div className="small-box">
+          <div onClick={() => setCardOne(!cardOne)} className={cardOne ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://www.c3ntro.com/hubfs/logo-aws-blanco%20(1).png" alt="aws" />
+                </picture>
               </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>The best destination that you've went on vacations? 🏖</p>
-                </Item>
+              <div className='flip-box-back'>
+                <p>The best destination that you've went on vacations? 🏖</p>
               </div>
             </div>
           </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardTwo(!cardTwo)} className={cardTwo ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://amazic.com/wp-content/uploads/2020/07/Overriding-variables-in-Terraform.jpg" alt="terraform" />
+          <span>AWS</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardTwo(!cardTwo)} className={cardTwo ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="docker" />
+                </picture>
               </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>What's your favorite sport to watch or practice? ⛹️</p>
-                </Item>
-              </div>
-            </div>
-          </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardThree(!cardThree)} className={cardThree ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://www.hiberus.com/crecemos-contigo/wp-content/uploads/2016/11/jenkins-1.png" alt="jenkins" />
-              </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>A movie or show you want to recommend? 🍿</p>
-                </Item>
+              <div className='flip-box-back'>
+                <p>What's your favorite sport to watch or practice? ⛹️</p>
               </div>
             </div>
           </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFour(!cardFour)} className={cardFour ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://www.a10networks.com/wp-content/uploads/OnDemandWebinar-Kubernetes-KeyGraphic-@2x-768x422.png" alt="k8s" />
+          <span>DOCKER</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardThree(!cardThree)} className={cardThree ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://blogs.vmware.com/cloudprovider/files/2019/04/og-image-8b3e4f7d-blog-aspect-ratio.png" alt="terraform" />
+                </picture>
               </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>What superpower would you like to have? 🦸</p>
-                </Item>
-              </div>
-            </div>
-          </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://i0.wp.com/derechodelared.com/wp-content/uploads/2021/03/azure-1.png" alt="azure" />
-              </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>Can you tell us the last thing that you have ordered online? 🛍</p>
-                </Item>
+              <div className='flip-box-back'>
+                <p>A movie or show you want to recommend? 🍿</p>
               </div>
             </div>
           </div>
-          </Grid>
-          <Grid item xs={4}><div onClick={() => setCardSix(!cardSix)} className={cardSix ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <img src="https://c4.wallpaperflare.com/wallpaper/396/50/367/linux-command-lines-unix-bash-grey-hd-wallpaper-thumb.jpg" alt="bash" />
+          <span>TERRAFORM</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardFour(!cardFour)} className={cardFour ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img className="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GITHUB" />
+                </picture>
               </div>
-              <div className="flip-box-back">
-                <Item className='question'>
-                  <p>What's the best meal that you can cook? 🧑‍🍳</p>
-                </Item>
+              <div className='flip-box-back'>
+                <p>What superpower would you like to have? 🦸</p>
               </div>
             </div>
           </div>
-          </Grid>
-          <Grid item xs={2}>
-            <img className='spin' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
-          </Grid>
-          <Grid item xs={8}>
-            <Grid container rowSpacing={1} direction="row" justifyContent="center" alignItems="center">
-              {people.map(member => (
-                <Grid item xs={4}>
-                  <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                    <ListItem alignItems="flex-start">
-                      <ListItemAvatar>
-                        <Avatar alt={member.name} src={member.photo} />
-                      </ListItemAvatar>
-                      <ListItemText
-                        primary={member.name}
-                        secondary={
-                          <React.Fragment>
-                            <Typography
-                              sx={{ display: 'inline' }}
-                              component="span"
-                              variant="body2"
-                              color="text.primary"
-                            >
-                              {member.position}
-                            </Typography>
-                            &nbsp;- {member.nationality}
-                          </React.Fragment>
-                        }
-                      />
-                    </ListItem>
-                  </List>
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
-          <Grid item xs={2}>
-            <img className='spin-reverse' src='https://f6.ftipng.com/pngimgs/other/79505/png-clipart-Download-Spotlight-Clipart_thumbnail.png' />
-          </Grid>
-        </Grid>
-      </Box>
+          <span>GITHUB</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div className='flip-box'>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture onClick={() => updateMemberCard(cardMember)}>
+                  <img src={people[cardMember].photo} alt="member" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <span>{people[cardMember].name}</span>
+          <span>{people[cardMember].lastname}</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://coralogix.com/wp-content/uploads/2020/12/jenkins.png" alt="JENKINS" />
+                </picture>
+              </div>
+              <div className='flip-box-back'>
+                <p>Can you tell us the last thing that you have ordered online? 🛍</p>
+              </div>
+            </div>
+          </div>
+          <span>JENKINS</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardSix(!cardSix)} className={cardSix ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" alt="K8S" />
+                </picture>
+              </div>
+              <div className='flip-box-back'>
+                <p>What's the best meal that you can cook? 🧑‍🍳</p>
+              </div>
+            </div>
+          </div>
+          <span>K8S</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardSeven(!cardSeven)} className={cardSeven ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://seeklogo.com/images/M/microsoft-azure-logo-85055C44BE-seeklogo.com.png" alt="AZURE" />
+                </picture>
+              </div>
+              <div className='flip-box-back'>
+                <p>What do you like buying from the grocery shop? 🍪</p>
+              </div>
+            </div>
+          </div>
+          <span>AZURE</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardEight(!cardEight)} className={cardEight ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture>
+                  <img src="https://seeklogo.com/images/G/gitlab-logo-757620E430-seeklogo.com.png" alt="GITLAB" />
+                </picture>
+              </div>
+              <div className='flip-box-back'>
+                <p>If you won a lottery, what would you do with all the money? 🤑</p>
+              </div>
+            </div>
+          </div>
+          <span>GITLAB</span>
+          <span>MAN</span>
+        </div>
+        <div className="footer">
+          <p>Hi there! Please tell us about where are you from and one of your hobbies. Then select a tool to unlock a secret question!</p>
+        </div>
+      </div>
     </ThemeProvider>
   );
 }
