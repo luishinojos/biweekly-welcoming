@@ -1,8 +1,6 @@
 
 import './index.css';
 import React, { useState } from 'react';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -12,49 +10,22 @@ const darkTheme = createTheme({
   },
 });
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
-
 const people = [
   {
     name: "???",
+    lastname: "MAN",
     photo: "src/favicon.svg"
   },
   {
-    name: "Jeffry Hernández",
-    nationality: "Colombia",
-    photo: "assets/img/jeffery.jpeg",
-    position: "SRE III"
+    name: "Carlos",
+    lastname: "Pérez",
+    photo: "assets/img/carlos-perez.jpeg",
   },
   {
-    name: "Damian Zermeño",
-    nationality: "Guadalajara",
-    photo: "assets/img/damian.jpeg",
-    position: "SRE III"
+    name: "Raúl",
+    lastname: "Murcia",
+    photo: "assets/img/raul-murcia.jpeg",
   },
-  {
-    name: "Alberto Piñon Formoso",
-    nationality: "Mexico",
-    photo: "assets/img/alberto.jpeg",
-    position: "SRE II"
-  },
-  {
-    name: "Jorge Madrigal",
-    nationality: "Colombia",
-    photo: "assets/img/jorge.jpeg",
-    position: "SRE III"
-  },
-  {
-    name: "Ricardo Núñez",
-    nationality: "Colombia",
-    photo: "assets/img/ricardo.jpeg",
-    position: "SRE II"
-  }
 ]
 
 export default function RowAndColumnSpacing() {
@@ -67,6 +38,16 @@ export default function RowAndColumnSpacing() {
   const [cardSix, setCardSix] = useState(false);
   const [cardSeven, setCardSeven] = useState(false);
   const [cardEight, setCardEight] = useState(false);
+  const [cardMember, setCardMember] = useState(0);
+
+  const updateMemberCard = (cardMember) => {
+    let temp = cardMember;
+    if (cardMember < (people.length - 1)) {
+      setCardMember(temp + 1);
+    } else {
+      setCardMember(0);
+    }
+  }
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -137,11 +118,17 @@ export default function RowAndColumnSpacing() {
           <span>MAN</span>
         </div>
         <div className="small-box">
-          <picture className=''>
-            <img src="src/favicon.svg" alt="member" />
-          </picture>
-          <span>???</span>
-          <span>MAN</span>
+          <div className='flip-box'>
+            <div className='flip-box-inner'>
+              <div className='flip-box-front'>
+                <picture onClick={() => updateMemberCard(cardMember)}>
+                  <img src={people[cardMember].photo} alt="member" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <span>{people[cardMember].name}</span>
+          <span>{people[cardMember].lastname}</span>
         </div>
         <div className="small-box">
           <div onClick={() => setCardFive(!cardFive)} className={cardFive ? "flip-box flip-box-clicked" : "flip-box"}>
@@ -208,7 +195,7 @@ export default function RowAndColumnSpacing() {
           <span>MAN</span>
         </div>
         <div className="footer">
-          <p>Hi! Please tell us about where are you from and one of your hobbies. Then select a tool to unlock a secret question!</p>
+          <p>Hi there! Please tell us about where are you from and one of your hobbies. Then select a tool to unlock a secret question!</p>
         </div>
       </div>
     </ThemeProvider>

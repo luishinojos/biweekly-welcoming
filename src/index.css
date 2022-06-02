@@ -8,10 +8,10 @@ body {
   background: linear-gradient(180deg, #2669d7 0%, #2669d7 10%, #44cbdd 20%, #2669d7 30%, #2669d7 35%, #44cbdd 45%, #2669d7 55%, #2669d7 60%, #44cbdd 70%, #2669d7 80%); }
 
 .container {
-  width: 900px;
-  margin: 10px auto;
+  width: 1000px;
+  margin: 5px auto;
   display: grid;
-  grid-template-rows: 50px 230px 230px 230px 100px;
+  grid-template-rows: 40px 230px 230px 230px 125px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   grid-template-areas: "head head head " "box box box" "box box box" "box box box" "foot foot foot"; }
@@ -20,6 +20,7 @@ body {
     padding: 10px;
     font-size: 30px; }
   .container .small-box {
+    height: 100%;
     display: flex;
     flex-direction: column;
     cursor: pointer; }

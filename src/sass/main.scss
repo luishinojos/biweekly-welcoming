@@ -11,10 +11,10 @@ body {
 }
 
 .container {
-  width: 900px;
-  margin: 10px auto;
+  width: 1000px;
+  margin: 5px auto;
   display: grid;
-  grid-template-rows: 50px 230px 230px 230px 100px;
+  grid-template-rows: 40px 230px 230px 230px 125px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 
@@ -31,6 +31,7 @@ body {
   }
 
   .small-box {
+    height: 100%;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -106,7 +107,6 @@ body {
     line-height: 30px;
     padding: 3px;
   }
-  
 }
 
 /* This container is needed to position the front and back side */
