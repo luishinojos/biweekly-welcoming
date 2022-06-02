@@ -62,7 +62,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>The best destination that you"ve went on vacations? 🏖</p>
+                <p>The best destination that you’ve went on vacations? 🏖</p>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What"s your favorite sport to watch or practice? ⛹️</p>
+                <p>What’s your favorite sport to watch or practice? ⛹️</p>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What"s the best meal that you can cook? 🧑‍🍳</p>
+                <p>What’s the best meal that you can cook? 🧑‍🍳</p>
               </div>
             </div>
           </div>
