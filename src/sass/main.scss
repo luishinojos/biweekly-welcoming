@@ -6,7 +6,8 @@
 body {
   font-family: 'Press Start 2P', cursive;
   background: rgb(38, 105, 215);
-  background: linear-gradient(180deg, rgba(38, 105, 215, 1) 0%, rgba(38, 105, 215, 1) 15%, rgba(68, 203, 221, 1) 25%, rgba(38, 105, 215, 1) 35%, rgba(38, 105, 215, 1) 40%, rgba(68, 203, 221, 1) 50%, rgba(38, 105, 215, 1) 60%, rgba(38, 105, 215, 1) 65%, rgba(68, 203, 221, 1) 75%, rgba(38, 105, 215, 1) 85%);
+  background: linear-gradient(180deg, rgba(38, 105, 215, 1) 0%, rgba(38, 105, 215, 1) 10%, rgba(68, 203, 221, 1) 20%, rgba(38, 105, 215, 1) 30%, rgba(38, 105, 215, 1) 35%, rgba(68, 203, 221, 1) 45%, rgba(38, 105, 215, 1) 55%, rgba(38, 105, 215, 1) 60%, rgba(68, 203, 221, 1) 70%, rgba(38, 105, 215, 1) 80%);
+
 }
 
 .container {
@@ -32,13 +33,12 @@ body {
   .small-box {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
     picture {
       background-color: black;
-      border: 10px ridge #44CBDD;
-      height: 70%;
+      height: 100%;
       width: 100%;
-      margin-bottom: 6px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,6 +61,13 @@ body {
 
 .header {
   grid-area: head;
+  text-align: center;
+
+  p {
+    line-height: 70px;
+    height: 50px;
+
+  }
 }
 
 .footer {
@@ -73,18 +80,62 @@ body {
 
 
   p {
+    padding: 5px;
     font-size: 15px;
+    line-height: 25px;
   }
 }
 
-.header,
-.footer {
-  text-align: center;
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border: 10px ridge #44CBDD;
+  perspective: 1000px;
+  margin-bottom: 6px;
+  /* Remove this if you don't want the 3D effect */
+
+  &:hover {
+    border: 10px ridge white;
+  }
 
   p {
-
-    line-height: 70px;
-    height: 50px;
-
+    font-size: 14px;
+    line-height: 30px;
+    padding: 3px;
   }
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box-clicked .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+  transform: rotateX(180deg);
 }
