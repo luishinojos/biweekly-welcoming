@@ -1,138 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: rgb(165, 164, 164);
-  margin: 2%;
-  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  background: rgb(38, 105, 215);
+  background: linear-gradient(180deg, rgba(38, 105, 215, 1) 0%, rgba(38, 105, 215, 1) 15%, rgba(68, 203, 221, 1) 25%, rgba(38, 105, 215, 1) 35%, rgba(38, 105, 215, 1) 40%, rgba(68, 203, 221, 1) 50%, rgba(38, 105, 215, 1) 60%, rgba(38, 105, 215, 1) 65%, rgba(68, 203, 221, 1) 75%, rgba(38, 105, 215, 1) 85%);
 }
 
-div.MuiPaper-root.question {
-  height: 190px;
-  font-size: 23pt;
+.container {
+  width: 900px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-rows: 50px 230px 230px 230px 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+
+  grid-template-areas: "head head head "
+    "box box box"
+    "box box box"
+    "box box box"
+    "foot foot foot";
+
+  &>* {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .small-box {
+    display: flex;
+    flex-direction: column;
+
+    picture {
+      background-color: black;
+      border: 10px ridge #44CBDD;
+      height: 70%;
+      width: 100%;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 80%;
+      }
+
+      .github {
+        filter: invert(1);
+      }
+    }
+
+    span:last-of-type {
+      margin-left: auto;
+    }
+  }
+
 }
 
-div.MuiPaper-root:hover {
-  background-color: #282f36;
+.header {
+  grid-area: head;
 }
 
-img.spin {
-  animation: spin 4s infinite linear;
-}
+.footer {
+  grid-area: foot;
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg) scaleY(-1);
-  }
+  background-color: black;
+  box-shadow: inset 0px 0px 0px 6px #FABDC6;
+  border: 2px solid #000;
+  border-radius: 10px;
 
-  50% {
-    transform: rotate(-45deg) scaleY(-1);
-  }
 
-  100% {
-    transform: rotate(0deg) scaleY(-1);
+  p {
+    font-size: 15px;
   }
 }
 
-img.spin-reverse {
-  animation: spin-reverse 4s infinite linear;
-}
-
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(0deg) scaleX(-1) scaleY(-1);
-  }
-
-  50% {
-    transform: rotate(-45deg) scaleX(-1) scaleY(-1);
-  }
-
-  100% {
-    transform: rotate(0deg) scaleX(-1) scaleY(-1);
-  }
-}
-
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-div.newcomers {
+.header,
+.footer {
   text-align: center;
-  font-size: large;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  cursor: pointer;
-  width: 100%;
-  height: 200px;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
+  p {
 
-  img {
-    object-fit: cover;
-    width: inherit;
-    height: inherit;
+    line-height: 70px;
+    height: 50px;
+
   }
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box-clicked .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front,
-.flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.MuiListItemText-root>span.MuiTypography-root {
-  color: rgb(230, 223, 223);
-  text-decoration: underline;
-}
-
-
-
-ul.MuiList-root:hover {
-  box-shadow: 0 14px 18px 0 rgba(255, 255, 255, 0.7), 0 6px 20px 0 rgba(255, 255, 255, 0.69);
-}
-
-.MuiAvatar-root.MuiAvatar-circular {
-  width: 50px;
-  height: 50px;
 }
