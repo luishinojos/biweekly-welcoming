@@ -89,17 +89,17 @@ body {
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
-  box-shadow: 4px 0px 0px 0px white, 6px 0px 0px 0px black, 8px 0px 0px 0px #44cbdd, 10px 0px 0px 0px white, 12px 0px 0px 0px #44cbdd, 0px 4px 0px 0px white, 0px 6px 0px 0px black, 0px 8px 0px 0px #44cbdd, 0px 10px 0px 0px white, 0px 12px 0px 0px #44cbdd, -4px 0px 0px 0px white, -6px 0px 0px 0px black, -8px 0px 0px 0px #44cbdd, -10px 0px 0px 0px white, -12px 0px 0px 0px #44cbdd, 0px -4px 0px 0px white, 0px -6px 0px 0px black, 0px -8px 0px 0px #44cbdd, 0px -10px 0px 0px white, 0px -12px 0px 0px #44cbdd, 0px 0px 0px 12px black, 0px 0px 0px 14px black, 5px 5px 0px 10px rgba(0, 0, 0, 0);
+  box-shadow: 4px 0px 1px 0px white, 6px 0px 1px 0px black, 8px 0px 1px 0px #44cbdd, 10px 0px 1px 0px white, 12px 0px 1px 0px #44cbdd, 0px 4px 1px 0px white, 0px 6px 1px 0px black, 0px 8px 1px 0px #44cbdd, 0px 10px 1px 0px white, 0px 12px 1px 0px #44cbdd, -4px 0px 1px 0px white, -6px 0px 1px 0px black, -8px 0px 1px 0px #44cbdd, -10px 0px 1px 0px white, -12px 0px 1px 0px #44cbdd, 0px -4px 1px 0px white, 0px -6px 1px 0px black, 0px -8px 1px 0px #44cbdd, 0px -10px 1px 0px white, 0px -12px 1px 0px #44cbdd, 0px 0px 1px 12px black, 0px 0px 1px 14px black, 5px 5px 1px 10px rgba(0, 0, 0, 0);
   background-color: black; }
   .flip-box-front:hover,
   .flip-box-back:hover {
-    animation: blinkingText .5s infinite; }
+    animation: blinkingText .3s infinite; }
 
 @keyframes blinkingText {
   50% {
-    box-shadow: 4px 0px 0px 0px white, 6px 0px 0px 0px black, 8px 0px 0px 0px #44cbdd, 10px 0px 0px 0px white, 12px 0px 0px 0px #44cbdd, 0px 4px 0px 0px white, 0px 6px 0px 0px black, 0px 8px 0px 0px #44cbdd, 0px 10px 0px 0px white, 0px 12px 0px 0px #44cbdd, -4px 0px 0px 0px white, -6px 0px 0px 0px black, -8px 0px 0px 0px #44cbdd, -10px 0px 0px 0px white, -12px 0px 0px 0px #44cbdd, 0px -4px 0px 0px white, 0px -6px 0px 0px black, 0px -8px 0px 0px #44cbdd, 0px -10px 0px 0px white, 0px -12px 0px 0px #44cbdd, 0px 0px 0px 12px white, 0px 0px 0px 14px black, 5px 5px 0px 10px rgba(0, 0, 0, 0); }
+    box-shadow: 4px 0px 1px 0px white, 6px 0px 1px 0px black, 8px 0px 1px 0px #44cbdd, 10px 0px 1px 0px white, 12px 0px 1px 0px #44cbdd, 0px 4px 1px 0px white, 0px 6px 1px 0px black, 0px 8px 1px 0px #44cbdd, 0px 10px 1px 0px white, 0px 12px 1px 0px #44cbdd, -4px 0px 1px 0px white, -6px 0px 1px 0px black, -8px 0px 1px 0px #44cbdd, -10px 0px 1px 0px white, -12px 0px 1px 0px #44cbdd, 0px -4px 1px 0px white, 0px -6px 1px 0px black, 0px -8px 1px 0px #44cbdd, 0px -10px 1px 0px white, 0px -12px 1px 0px #44cbdd, 0px 0px 1px 12px white, 0px 0px 1px 14px black, 5px 5px 1px 10px rgba(0, 0, 0, 0); }
   100% {
-    box-shadow: 4px 0px 0px 0px white, 6px 0px 0px 0px black, 8px 0px 0px 0px #44cbdd, 10px 0px 0px 0px white, 12px 0px 0px 0px #44cbdd, 0px 4px 0px 0px white, 0px 6px 0px 0px black, 0px 8px 0px 0px #44cbdd, 0px 10px 0px 0px white, 0px 12px 0px 0px #44cbdd, -4px 0px 0px 0px white, -6px 0px 0px 0px black, -8px 0px 0px 0px #44cbdd, -10px 0px 0px 0px white, -12px 0px 0px 0px #44cbdd, 0px -4px 0px 0px white, 0px -6px 0px 0px black, 0px -8px 0px 0px #44cbdd, 0px -10px 0px 0px white, 0px -12px 0px 0px #44cbdd, 0px 0px 0px 12px black, 0px 0px 0px 14px black, 5px 5px 0px 10px rgba(0, 0, 0, 0); } }
+    box-shadow: 4px 0px 1px 0px white, 6px 0px 1px 0px black, 8px 0px 1px 0px #44cbdd, 10px 0px 1px 0px white, 12px 0px 1px 0px #44cbdd, 0px 4px 1px 0px white, 0px 6px 1px 0px black, 0px 8px 1px 0px #44cbdd, 0px 10px 1px 0px white, 0px 12px 1px 0px #44cbdd, -4px 0px 1px 0px white, -6px 0px 1px 0px black, -8px 0px 1px 0px #44cbdd, -10px 0px 1px 0px white, -12px 0px 1px 0px #44cbdd, 0px -4px 1px 0px white, 0px -6px 1px 0px black, 0px -8px 1px 0px #44cbdd, 0px -10px 1px 0px white, 0px -12px 1px 0px #44cbdd, 0px 0px 1px 12px black, 0px 0px 1px 14px black, 5px 5px 1px 10px rgba(0, 0, 0, 0); } }
 
 /* Style the back side */
 .flip-box-back {
