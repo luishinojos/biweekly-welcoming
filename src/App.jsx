@@ -26,6 +26,11 @@ const people = [
     lastname: "Murcia",
     photo: "assets/img/raul-murcia.jpeg",
   },
+  {
+    name: "Carlos",
+    lastname: "Ayala",
+    photo: "assets/img/carlos-ayala.jpg",
+  },
 ]
 
 export default function RowAndColumnSpacing() {
@@ -62,7 +67,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>The best destination that you’ve went on vacations? 🏖</p>
+                <p>The best destination that you've gone to on vacations? 🏖</p>
               </div>
             </div>
           </div>
@@ -94,7 +99,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>A movie or show you want to recommend? 🍿</p>
+                <p>A movie or show you would recommend? 🍿</p>
               </div>
             </div>
           </div>
@@ -187,7 +192,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>If you won a lottery, what would you do with all the money? 🤑</p>
+                <p>If you win the lottery, what would you do with all the money? 🤑</p>
               </div>
             </div>
           </div>

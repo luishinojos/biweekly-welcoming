@@ -25,7 +25,6 @@ body {
     flex-direction: column;
     cursor: pointer; }
     .container .small-box picture {
-      background-color: black;
       height: 100%;
       width: 100%;
       display: flex;
@@ -58,19 +57,15 @@ body {
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
-  background-color: black;
   width: 100%;
   height: 100%;
-  border: 10px ridge #44CBDD;
   perspective: 1000px;
   margin-bottom: 6px;
   /* Remove this if you don't want the 3D effect */ }
-  .flip-box:hover {
-    border: 10px ridge white; }
   .flip-box p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
-    padding: 3px; }
+    padding: 12px; }
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -93,7 +88,9 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   /* Safari */
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  box-shadow: inset 0px 0px 0px 2px black, inset 0px 0px 0px 4px white, inset 0px 0px 0px 6px black, inset 0px 0px 0px 8px #44cbdd, inset 0px 0px 0px 10px white, inset 0px 0px 0px 12px #44cbdd;
+  background-color: black; }
 
 /* Style the back side */
 .flip-box-back {
