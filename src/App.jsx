@@ -200,7 +200,10 @@ export default function RowAndColumnSpacing() {
           <span>MAN</span>
         </div>
         <div className="footer">
-          <p>Hi there! Please tell us about where are you from and one of your hobbies. Then select a tool to unlock a secret question!</p>
+          <p>Hi there and welcome to the team! Don't be shy and please:<br />
+            &nbsp;&nbsp;1.- Tell us about where are you from.<br />
+            &nbsp;&nbsp;2.- What's one thing you like to do.<br />
+            &nbsp;&nbsp;3.- Select a tool to unlock a secret question!</p>
         </div>
       </div>
     </ThemeProvider>
