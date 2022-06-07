@@ -25,6 +25,11 @@ const people = [
     lastname: "Murcia",
     photo: "assets/img/raul-murcia.jpeg",
   },
+  {
+    name: "Carlos",
+    lastname: "Ayala",
+    photo: "assets/img/carlos-ayala.jpg",
+  },
 ]
 
 export default function RowAndColumnSpacing() {
@@ -61,7 +66,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>The best destination that you’ve went on vacations? 🏖</p>
+                <p>The best destination that you've gone to on vacations? 🏖</p>
               </div>
             </div>
           </div>
@@ -93,7 +98,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>A movie or show you want to recommend? 🍿</p>
+                <p>A movie or show you would recommend? 🍿</p>
               </div>
             </div>
           </div>
@@ -186,7 +191,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>If you won a lottery, what would you do with all the money? 🤑</p>
+                <p>If you win the lottery, what would you do with all the money? 🤑</p>
               </div>
             </div>
           </div>
@@ -194,7 +199,10 @@ export default function RowAndColumnSpacing() {
           <span>MAN</span>
         </div>
         <div className="footer">
-          <p>Hi there! Please tell us about where are you from and one of your hobbies. Then select a tool to unlock a secret question!</p>
+          <p>Hi there and welcome to the team! Don't be shy and please:<br />
+            &nbsp;&nbsp;1.- Tell us about where are you from.<br />
+            &nbsp;&nbsp;2.- What's one thing you like to do.<br />
+            &nbsp;&nbsp;3.- Select a tool to unlock a secret question!</p>
         </div>
       </div>
     </ThemeProvider>
