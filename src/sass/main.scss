@@ -11,18 +11,17 @@ body {
 }
 
 .container {
-  width: 900px;
-  margin: 5px auto;
+  width: 1200px;
   display: grid;
-  grid-template-rows: 40px 230px 230px 230px 125px;
-  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-template-rows: 40px 230px 230px 230px;
+  grid-template-columns: repeat(3, 300px) 500px;
   grid-gap: 30px;
 
-  grid-template-areas: "head head head "
-    "box box box"
-    "box box box"
-    "box box box"
-    "foot foot foot";
+  grid-template-areas: "head head head head"
+    "box box box foot"
+    "box box box foot"
+    "box box box foot";
 
   &>* {
     color: white;
