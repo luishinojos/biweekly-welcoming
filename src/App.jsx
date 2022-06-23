@@ -16,19 +16,9 @@ const people = [
     photo: "https://cdn-images-1.medium.com/max/1200/1*-Y2UTMmyQiNa2BVsgPNmqA.png"
   },
   {
-    name: "Carlos",
-    lastname: "Pérez",
-    photo: "assets/img/carlos-perez.jpeg",
-  },
-  {
-    name: "Raúl",
-    lastname: "Murcia",
-    photo: "assets/img/raul-murcia.jpeg",
-  },
-  {
-    name: "Carlos",
-    lastname: "Ayala",
-    photo: "assets/img/carlos-ayala.jpg",
+    name: "Camilo",
+    lastname: "Forero",
+    photo: "assets/img/camilo-forero.jpg",
   },
 ]
 
@@ -66,7 +56,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>The best destination that you've gone to on vacations? 🏖</p>
+                <p>Any destination that you want to go to on vacation?  🏖</p>
               </div>
             </div>
           </div>
@@ -82,7 +72,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What’s your favorite sport to watch or practice? ⛹️</p>
+                <p>How well do you handle spicy food? 🌶</p>
               </div>
             </div>
           </div>
@@ -98,7 +88,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>A movie or show you would recommend? 🍿</p>
+                <p>What's your favorite fictional character? 👾</p>
               </div>
             </div>
           </div>
@@ -110,15 +100,15 @@ export default function RowAndColumnSpacing() {
             <div className="flip-box-inner">
               <div className="flip-box-front">
                 <picture>
-                  <img className="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GITHUB" />
+                  <img className="github" src="https://banner2.cleanpng.com/20180824/xkx/kisspng-circleci-logo-continuous-integration-computer-icon-find-cloud-computing-companies-using-node-js-in-sf-5b80afa3cf4a45.0442739215351602278491.jpg" alt="CIRCLE CI" />
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What superpower would you like to have? 🦸</p>
+                <p>What code editor do you like the most? 🧑🏼‍💻</p>
               </div>
             </div>
           </div>
-          <span>GITHUB</span>
+          <span>CIRCLECI</span>
           <span>MAN</span>
         </div>
         <div className="small-box">
@@ -143,11 +133,27 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>Can you tell us the last thing that you have ordered online? 🛍</p>
+                <p>Are you team Tabs or team Spaces? ⌨️</p>
               </div>
             </div>
           </div>
           <span>JENKINS</span>
+          <span>MAN</span>
+        </div>
+        <div className="small-box">
+          <div onClick={() => setCardSeven(!cardSeven)} className={cardSeven ? "flip-box flip-box-clicked" : "flip-box"}>
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <picture>
+                  <img className="github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/1664px-Ansible_logo.svg.png" alt="ANSIBLE" />
+                </picture>
+              </div>
+              <div className="flip-box-back">
+                <p>What's your favorite snack from the convinience store? 🍪</p>
+              </div>
+            </div>
+          </div>
+          <span>ANSIBLE</span>
           <span>MAN</span>
         </div>
         <div className="small-box">
@@ -159,7 +165,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What’s the best meal that you can cook? 🧑‍🍳</p>
+                <p>What's the best meal that you can cook? 🧑‍🍳</p>
               </div>
             </div>
           </div>
@@ -167,27 +173,11 @@ export default function RowAndColumnSpacing() {
           <span>MAN</span>
         </div>
         <div className="small-box">
-          <div onClick={() => setCardSeven(!cardSeven)} className={cardSeven ? "flip-box flip-box-clicked" : "flip-box"}>
-            <div className="flip-box-inner">
-              <div className="flip-box-front">
-                <picture>
-                  <img src="https://seeklogo.com/images/M/microsoft-azure-logo-85055C44BE-seeklogo.com.png" alt="AZURE" />
-                </picture>
-              </div>
-              <div className="flip-box-back">
-                <p>What do you like buying from the grocery shop? 🍪</p>
-              </div>
-            </div>
-          </div>
-          <span>AZURE</span>
-          <span>MAN</span>
-        </div>
-        <div className="small-box">
           <div onClick={() => setCardEight(!cardEight)} className={cardEight ? "flip-box flip-box-clicked" : "flip-box"}>
             <div className="flip-box-inner">
               <div className="flip-box-front">
                 <picture>
-                  <img src="https://seeklogo.com/images/G/gitlab-logo-757620E430-seeklogo.com.png" alt="GITLAB" />
+                  <img src="https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/cloud/images/social-icon-google-cloud-1200-630.png" alt="GCP" />
                 </picture>
               </div>
               <div className="flip-box-back">
@@ -195,7 +185,7 @@ export default function RowAndColumnSpacing() {
               </div>
             </div>
           </div>
-          <span>GITLAB</span>
+          <span>GCP</span>
           <span>MAN</span>
         </div>
         <div className="footer">
