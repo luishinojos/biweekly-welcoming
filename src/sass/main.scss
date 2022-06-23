@@ -11,17 +11,18 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 900px;
+  margin: 5px auto;
   display: grid;
-  margin: auto;
-  grid-template-rows: 40px 230px 230px 230px;
-  grid-template-columns: repeat(3, 300px) 500px;
+  grid-template-rows: 40px 230px 230px 230px 125px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 
-  grid-template-areas: "head head head head"
-    "box box box foot"
-    "box box box foot"
-    "box box box foot";
+  grid-template-areas: "head head head "
+    "box box box"
+    "box box box"
+    "box box box"
+    "foot foot foot";
 
   &>* {
     color: white;
@@ -76,7 +77,6 @@ body {
   box-shadow: inset 0px 0px 0px 6px #FABDC6;
   border: 2px solid #000;
   border-radius: 10px;
-
 
   p {
     padding: 5px;

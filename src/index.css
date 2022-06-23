@@ -8,13 +8,13 @@ body {
   background: linear-gradient(180deg, #2669d7 0%, #2669d7 10%, #44cbdd 20%, #2669d7 30%, #2669d7 35%, #44cbdd 45%, #2669d7 55%, #2669d7 60%, #44cbdd 70%, #2669d7 80%); }
 
 .container {
-  width: 1200px;
+  width: 900px;
+  margin: 5px auto;
   display: grid;
-  margin: auto;
-  grid-template-rows: 40px 230px 230px 230px;
-  grid-template-columns: repeat(3, 300px) 500px;
+  grid-template-rows: 40px 230px 230px 230px 125px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  grid-template-areas: "head head head head" "box box box foot" "box box box foot" "box box box foot"; }
+  grid-template-areas: "head head head " "box box box" "box box box" "box box box" "foot foot foot"; }
   .container > * {
     color: white;
     padding: 10px;
