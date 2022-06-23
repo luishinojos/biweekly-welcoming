@@ -1,7 +1,6 @@
 
 import "./index.css";
 import React, { useState } from "react";
-
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const darkTheme = createTheme({
