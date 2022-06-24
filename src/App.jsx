@@ -18,7 +18,7 @@ const people = [
   {
     name: "Camilo",
     lastname: "Forero",
-    photo: "assets/img/camilo-forero.jpg",
+    photo: "assets/img/camilo-forero.jpeg",
   },
 ]
 
