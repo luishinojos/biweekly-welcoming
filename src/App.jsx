@@ -16,9 +16,14 @@ const people = [
     photo: "https://cdn-images-1.medium.com/max/1200/1*-Y2UTMmyQiNa2BVsgPNmqA.png"
   },
   {
-    name: "Camilo",
-    lastname: "Forero",
-    photo: "assets/img/camilo-forero.jpeg",
+    name: "Josue",
+    lastname: "Ruiz",
+    photo: "assets/img/josue-ruiz.jpeg",
+  },
+  {
+    name: "Ramon",
+    lastname: "Esparza",
+    photo: "assets/img/ramon-esparza.jpg",
   },
 ]
 
