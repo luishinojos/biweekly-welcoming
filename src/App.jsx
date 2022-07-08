@@ -23,7 +23,7 @@ const people = [
   {
     name: "Ramon",
     lastname: "Esparza",
-    photo: "assets/img/ramon-esparza.jpg",
+    photo: "assets/img/ramon-esparza.png",
   },
 ]
 
@@ -61,7 +61,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>Any destination that you want to go to on vacation?  🏖</p>
+                <p>Would you rather go to a tropical paradise or a big city?  🏖</p>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>How well do you handle spicy food? 🌶</p>
+                <p>Any book that you would recommend? 📖</p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What code editor do you like the most? 🧑🏼‍💻</p>
+                <p>Do you remember what costume you dressed up as last time? 🦸</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>Are you team Tabs or team Spaces? ⌨️</p>
+                <p>Any tool that you would like to learn or master? 🧑🏼‍💻</p>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>What's your favorite snack from the convinience store? 🍪</p>
+                <p>Do you have a favorite snack or candy? 🍪</p>
               </div>
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function RowAndColumnSpacing() {
                 </picture>
               </div>
               <div className="flip-box-back">
-                <p>If you win the lottery, what would you do with all the money? 🤑</p>
+                <p>If you ere to sing in a Karaoke, what song would you choose? 🎤</p>
               </div>
             </div>
           </div>
